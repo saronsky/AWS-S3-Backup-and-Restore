@@ -1,0 +1,14 @@
+To run this program it is very simple.
+
+1. Boot up in Linux
+2. Ensure your AWS credentials are configured and boto3 is installed.
+3. Enter the directory to which the zip file was extracted, via command line.
+4. To back up your files, from the command line type "python3 backup.py local-directory-name bucket-name::bucket-directory-name", filling in the values of
+   directory names and bucket name appropriately.
+
+   To restore your files, from the command line type "python3 restore.py bucket-name::bucket-directory-name local-directory-name", filling in the values of
+   directory names and bucket name appropriately.
+
+   MAKE SURE!
+   bucket-directory-name: Ends in "/"
+   local-directory-name": Absolute path and ends in "/"
